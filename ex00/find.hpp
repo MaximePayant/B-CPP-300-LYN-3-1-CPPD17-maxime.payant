@@ -9,10 +9,9 @@
 #define FIND_HPP
 
 #include <algorithm>
-#include <iterator>
 
-template <class T>
-const auto do_find(const T& list, int toFind)
+template <typename T>
+typename T::iterator do_find(T& list, int toFind)
 {
     return (std::find(list.begin(), list.end(), toFind));
 }
