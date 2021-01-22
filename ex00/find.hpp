@@ -12,7 +12,7 @@
 #include <iterator>
 
 template <class T>
-typename T::iterator do_find(const T& list, int toFind)
+const auto do_find(const T& list, int toFind)
 {
     return (std::find(list.begin(), list.end(), toFind));
 }
